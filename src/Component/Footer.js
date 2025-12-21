@@ -3,11 +3,12 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
-const Footer = () => {
+const Footer = () => { 
     return (
         <>
 
-            <div className=" m-auto  shadow-[0px_0px_6px_0px_grey] bg-[white]  fixed bottom-0 h-[150px] w-[100%]">
+            <div className=" m-auto text-white   bg-gradient-to-r from-red-500
+               to-red-600  mt-10 h-[150px] w-[100%]">
                 <div className='grid grid-flow-col p-5 mx-5 border-b-2 border-[grey] border-solid p-4 grid-cols-12'>
                     <div className='col-span-2'></div>
                     <div className='col-span-4 pr-5 text-right border-r-2 border-[grey]'>

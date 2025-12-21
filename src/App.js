@@ -6,16 +6,23 @@ import AboutUS from './Pages/AboutUs';
 import Contact from './Pages/Contact';
 
 
+
 function App() {
-  return (<BrowserRouter>
+  return (
+        
+            <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/services' element={<Services/>}/>
-           
             <Route path='/about-us' element={<AboutUS/>}/>
             <Route path='/contact' element={<Contact/>}/>
           </Routes>
   </BrowserRouter>
+          
+
+
+          
+
   
   );
 }
