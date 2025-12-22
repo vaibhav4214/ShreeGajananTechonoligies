@@ -8,7 +8,7 @@ const Footer = () => {
         <>
 
             <div className=" m-auto text-white   bg-gradient-to-r from-red-500
-               to-red-600  mt-10 h-[150px] w-[100%]">
+               to-[#ebeee2b9]-600  mt-10 h-[150px] w-[100%]">
                 <div className='grid grid-flow-col p-5 mx-5 border-b-2 border-[grey] border-solid p-4 grid-cols-12'>
                     <div className='col-span-2'></div>
                     <div className='col-span-4 pr-5 text-right border-r-2 border-[grey]'>

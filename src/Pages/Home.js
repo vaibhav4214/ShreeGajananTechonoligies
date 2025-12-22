@@ -31,9 +31,9 @@ const Home = () => {
       <div className="bg-[red] grid grid-cols-12" style={siderImgB}>
          <div className="col-span-3"></div>
          <div className="col-span-6 font-[900] my-auto text-white">
-            <p className="text-[20px]" >4 Years Of Solid Technology</p>
+            <p className="text-[25px] animate-pulse" >4 Years Of Solid Technology</p>
             <p className="text-[70px]">Gajanan Technologies</p>
-                        <Link to="/services"><Button variant="contained" color="error">Get in touch with Us</Button></Link>
+                        <Link to="/services"><Button variant="contained" color="error">Our Services</Button></Link>
 
          </div>
 
@@ -70,8 +70,10 @@ const Home = () => {
                Technology Consulting & implementation, Web Development, Application Development,Training & Mentorship            </p>
          </div>
       </div>
+         <div className="bg-[#ebeee2b9]">
+                  <img src={agileImg} className="w-[100%]  my-5" />
 
-      <img src={agileImg} className="w-[100%] border-2 my-5" />
+         </div>
 
 
 
