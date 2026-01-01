@@ -1,0 +1,13 @@
+
+.allbtn
+{
+background-color: #dfdfda;
+padding: 5px;
+border-radius: 1px;
+margin: 1px;
+}
+.allbtn:hover
+{
+    background-color: rgba(209, 207, 204, 0.575);
+    color: white;
+}

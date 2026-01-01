@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 body{
-    background: linear-gradient(90deg, #9c9e246b 0%, #ff0202d2 100%)
+    background: linear-gradient(90deg, #9c9e246b 0%, #ff0202d2 100%);
+    min-height: 100vh;
+   
+
 }

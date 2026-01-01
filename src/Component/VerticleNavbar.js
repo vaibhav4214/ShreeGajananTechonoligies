@@ -8,7 +8,7 @@ const VerticleNAvbar = () => {
     return (
         
         <>
-            <div id="verticleNavBar" className="fixed hidden z-10 bg-gradient-to-r from-red-200 to-yellow-200 right-0 w-[30%]   top-0 h-[100%]">
+            <div id="verticleNavBar" className="fixed hidden z-10 bg-[white] right-0 w-[30%]   top-0 h-[100%]">
                 <span className="float-right p-5 cursor-pointer" onClick={hideVeticleNavbar}>❌</span>
                 <ul className="p-10">
                     <li><Link to="/">Home</Link></li>
