@@ -15,8 +15,6 @@ const Home = () => {
       backgroundImage: `url(${siderImg})`,
       height: '50vh',
       backgroundSize: 'cover',
-
-
    };
    const siderImgB2 = {
       backgroundImage: `url(${siderImg2})`,
@@ -28,9 +26,6 @@ const Home = () => {
       document.getElementById("functionaltesting").classList.add("hidden")
       document.getElementById("uidesign").classList.add("hidden")
       document.getElementById("webdevelopment").classList.add("hidden")
-
-
-
 
       let id = e.target.value
       console.log(id)
@@ -48,10 +43,10 @@ const Home = () => {
 </div> */}
 
       {/* sider */}
-      <div className="bg-[red] grid grid-cols-12" style={siderImgB}>
+      <div className=" grid grid-cols-12" style={siderImgB}>
          <div className="col-span-3"></div>
          <div className="col-span-6 font-[900] my-auto text-white">
-            <p className="text-[25px] animate-pulse" >4 Years Of Solid Technology</p>
+            <p className="text-[25px] animate-pulse inline" >4 Years Of Solid Technology</p>
             <p className="text-[70px] ">SHREE GAJANAN TECHNOLOGIES</p>
             <Link to="/services"><Button variant="contained" color="error">Our Services</Button></Link>
 
@@ -66,7 +61,8 @@ const Home = () => {
          <div className="col-span-1 ml-[100px]">End-to-End Software Testing ensures thorough verification, enhancing quality and reliability.
          </div>
          <div className="col-span-1">
-            <Link to="/contact"><Button variant="contained" color="error">Get in touch with Us</Button></Link>
+            <Link to="/contact">
+            <Button variant="contained" color="error">Get in touch with Us</Button></Link>
          </div>
       </div>
       <div className="grid  grid-cols-3 gap-2 mt-3 px-20">
@@ -96,7 +92,7 @@ const Home = () => {
 
       </div>
       {/* services */}
-      <div className="grid grid-cols-12 bg-[white] p-5 ">
+      <div className="grid grid-cols-12 bg-[#f8f6e3] p-5 ">
          <div className="col-span-2"></div>
          <div className="col-span-4">
             <p className="text-[25px]  ">Latest Post</p>
@@ -156,12 +152,13 @@ const Home = () => {
 
 
       <div className="   text-center " style={siderImgB2}>
-         <p id="pp" className="m-auto pt-[50px] lg:w-[60%]  text-[white] text-pretty font-[900] text-[20px]">
-            "We are continuously taking IT services from Shree Gajanan Technologies from last 4 years, We are happy with our decision"
-         </p>
+         <p id="pp" className="m-auto pt-[50px] lg:w-[50%]  text-[white] text-pretty font-[900] text-[20px]">
+"We have been working together for quite some time. I have to say that the entire experience working with Shree Gajanan Technologies is exceptional."         </p>
             <div className="mx-auto text-white">
-               <FiberManualRecordIcon/>
-               <FiberManualRecordIcon onClick={()=>document.getElementById("pp").innerHTML='"We have been working together for quite some time. I have to say that the entire experience working with Prognosticsoft is exceptional."'}/></div>
+               <FiberManualRecordIcon className="cursor-pointer hover:bg-[grey] hover:rounded-full" onClick={()=>document.getElementById("pp").innerHTML='"We have been working together for quite some time. I have to say that the entire experience working with Shree Gajanan Technologies is exceptional."'}/>
+               <FiberManualRecordIcon className="cursor-pointer hover:bg-[grey] hover:rounded-full" onClick={()=>document.getElementById("pp").innerHTML='"We are continuously taking IT services from Shree Gajanan Technologies from last 5 years, We are happy with our decision"'}/>
+
+               </div>
       </div>
 
 

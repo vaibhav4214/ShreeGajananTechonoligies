@@ -9,10 +9,10 @@ const Footer = () => {
         <>
 
             <div className=" mt-auto text-[grey]   bg-[#f8f6e3]    w-[100%]">
-                <div className='grid grid-flow-col p-5 mx-5  border-[grey]  grid-cols-12'>
-                    <div className='col-span-2'></div>
-                    <div className='col-span-2 p-5'>
-                        <img className="w-[70%]" src={logo} /><br />
+                <div className='grid  p-5 mx-5  border-[grey]  grid-rows-1 lg:grid-cols-12'>
+                    <div className='lg:col-span-2 col-span-0 '></div>
+                    <div className='lg:col-span-2  p-5'>
+                        <img className="lg:w-[70%]" src={logo} /><br />
                         <p className='text-[grey] mt-[-30px]'>At Shree Gajanan Technologies, we believe that imagination plus innovation equals a complete solution. We believe that there is virtually no end to the success that can be achieved with one single value- innovation</p>
 
                     </div>

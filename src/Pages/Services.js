@@ -36,10 +36,21 @@ const Services = () => {
     return <div className="">
 
         <Navbar />
+        <div className="p-5 border-2 mb-5 bg-white grid grid-cols-12">
+            <div className="col-span-3"></div>
+            <p className="text-[20px] float-left my-auto   col-span-1   text-[grey]  font-[600]">
 
-        <p className="text-[50px] underline   text-[#ffffff] text-center font-[900]">Services</p>
+                Services</p>
+            <p className="col-span-5 border-l-2 pl-10 text-[20px] text-[grey]">Delivering platforms that transform digital experience.</p>
+            <p className="col-span-3 float-left text-[grey]">
+
+               <span className="text-[red]">Home</span>  / Services
+
+            </p>
+
+        </div>
         {/* btn bar */}
-        <div className="w-[50%]  mx-auto">
+        <div className="lg:w-[50%] w-[80%]  mx-auto">
             <button value="functionaltesting" onClick={getServiceInformation} className={`${stylecss.allbtn} bg-[red]`}>Functional Testing</button>
             <button value="nonfuctionaltesting" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Non Functional Testing</button>
             <button value="uidesign" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>UI/UX Design</button>
@@ -61,23 +72,16 @@ const Services = () => {
 
         </div>
         <div className="grid grid-flow-col mb-5 text-[grey]   grid-cols-12">
-            <div className="col-span-3"></div>
-            <div className="col-span-6 rounded-[5px] p-5 bg-[white] ">
+            <div className="lg:col-span-3 col-span-1"></div>
+            <div className="lg:col-span-6 col-span-10 rounded-[5px] p-5 bg-[white] ">
                 {/* Functional Testing */}
                 <div className=" px-10 border-2" id="functionaltesting">
                     <h5 className="text-[20px] font-[900] ">Types of Functional Testing Services We Provide</h5>
                     <p>As the best functional testing company in India, we offer various types of functional testing services to meet the diverse needs of our clients. From validation of user interactions to end-to-end system integration, our experts have you covered.</p>
-
                     <h5 className="text-[20px] font-[900] ">Acceptance Testing</h5>
                     <p>Our acceptance testing services ensure your software meets the specified acceptance criteria, providing a final quality checkpoint before deployment. We work closely with your team to define comprehensive test scenarios and validate the application's real-world functionality.</p>
-
-
-
                     <h5 className="text-[20px] font-[900] ">Alpha Testing</h5>
                     <p>Leverage our alpha testing services to get a head start on identifying and resolving critical bugs and usability issues in your software. Our experts simulate real-world user interactions to uncover hidden defects and provide actionable insights to refine your application before a wider release.</p>
-
-
-
                     <h5 className="text-[20px] font-[900] ">Automation Testing</h5>
                     <p>Accelerate your testing efforts and improve consistency with our automated testing services. Our experts design and implement tailored test frameworks to streamline the validation process, reduce manual effort, and ensure comprehensive test coverage for your software.</p>
 
@@ -380,7 +384,7 @@ const Services = () => {
 
 
 
-            <div className="col-span-3"></div>
+            <div className="lg:col-span-3 col-span-1"></div>
 
 
 

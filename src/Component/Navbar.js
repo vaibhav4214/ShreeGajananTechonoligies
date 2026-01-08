@@ -49,16 +49,18 @@ const Navbar = () => {
         </div>
 
         <div className="grid  grid-flow-col grid-cols-12 bg-[#ffffff]">
-            <div className="col-span-3"></div>
-            <div className="col-span-3 ">
-                <Link to="/"><img src={logo} width={300} className="my-auto cursor-pointer rounded-full mr-5 " />
+            <div className="lg:col-span-3 col-span-0 "></div>
+            {/* main logo div */}
+            <div className="lg:col-span-3 col-span-6">
+                <Link to="/">
+                <img src={logo} width={300}  className="my-auto  cursor-pointer rounded-full  " />
                 </Link>
             </div>
             
-            <div className="col-span-6 my-auto">
+            <div className="col-span-6  my-auto">
                 <VerticleNAvbar
                 />
-                <span onClick={displayVerticleNavbar} className="text-[red] cursor-pointer 2xl:hidden "><ArticleIcon sx={{ fontSize: 50 }} /></span>
+                <span onClick={displayVerticleNavbar} className="text-[#f35757] float-right p-5 cursor-pointer 2xl:hidden "><ArticleIcon sx={{ fontSize: 50 }} /></span>
                 <div className=" hidden 2xl:block float-left">
                     <Link to="/" className=" px-[30px] border-r-0    py-12   border-2 border-y-0 border-gray-200 p-5   hover:bg-[#dfd7d7]">Home</Link>
                     <Link to="" onMouseOver={serviceHoverOmuseOver} onMouseLeave={serviceHoverOmuseLeave} className=" px-[30px]  p-5  py-12 border-r-0   border-2 border-y-0 border-gray-200   hover:bg-[#dfd7d7]">Services</Link>
