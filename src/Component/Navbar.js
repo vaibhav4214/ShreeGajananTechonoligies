@@ -1,17 +1,76 @@
 import { Link } from "react-router-dom"
+import VerticleNAvbar from "./VerticleNavbar"
+import ArticleIcon from '@mui/icons-material/Article';
+import logo from "../assest/logomain.png"
+import SerrvicesPopUP from "./ServicesPopUP";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
-const Navbar=()=>
-{
-    return(<>
-             {/* nav bar */}
-        <div className="grid shadow-md grid-flow-col grid-cols-12 p-3 bg-[white]">
-            <p className="text-[30px] font-[1000]  col-span-8 text-center text-[red]"><span className="float-right">SHREE GAJANAN TECHNOLOGIES</span></p>
-            <div className="col-span-4 m-auto">
-                <Link to="/" className="pr-3 mr-1 shadow-md p-2 bg-[red] font-[700] text-[white] rounded-[5px] hover:text-[grey] hover:scale-125">Home</Link>
-                <Link to="/services" className="pr-3 mr-1 shadow-md font-[700] bg-[red] text-[white]  p-2 rounded-[5px] hover:text-[grey]">Services</Link>
-                <Link to="/about-us" className="pr-3 mr-1 shadow-md font-[700] bg-[red] text-[white] p-2 rounded-[5px] hover:text-[grey]">About-Us</Link>
-                <Link to="/contact" className="pr-3 mr-1 shadow-md font-[700] bg-[red] text-[white] p-2 rounded-[5px] hover:text-[grey]">Contact</Link>
+const Navbar = () => {
 
+
+
+    // for service hover display service list
+    const serviceHoverOmuseOver = () => {
+        console.log("v")
+        document.getElementById("servicepopup").classList.remove("hidden")
+    }
+    const serviceHoverOmuseLeave = () => {
+        console.log("v")
+        document.getElementById("servicepopup").classList.add("hidden")
+    }
+
+    const serviceDisplayNone = () => {
+        document.getElementById("servicepopup").classList.toggle("hidden")
+
+    }
+
+    const displayVerticleNavbar = () => {
+        document.getElementById("verticleNavBar").classList.toggle("hidden")
+        console.log("vai")
+    }
+
+    return (<>
+        {/* nav bar */}
+        <div className="lg:grid hidden bg-[white] lg:block  lg:grid-cols-12 py-1 border-solid border-2 ">
+            <div className="col-span-3"></div>
+
+            <p className="col-span-3   p-2 pr-5  text-[#423b3b]"><span className="font-bold">Phone:</span> (+91) 7276867899  |  <span className="font-bold ">Email:</span> <a className="hover:text-[grey]" href="mailto:Contact@shreegajanan.org" >Contact@shreegajanan.org</a></p>
+            <div className="col-span-3 p-2 pl-5 text-right">
+                <a className="pr-2 text-[#423b3b] hover:text-[grey]" href=""><WhatsAppIcon /></a>
+                <a className="pr-2 text-[#423b3b] hover:text-[grey]" href="https://www.facebook.com/people/Shree-Gajanan-Tec"><FacebookIcon /></a>
+                <a className="pr-2 text-[#423b3b] hover:text-[grey]" href="https://www.instagram.com/shreegajanantechnology/"><InstagramIcon /></a>
+                <a className="pr-2 text-[#423b3b] hover:text-[grey]" href="https://www.youtube.com/@ShreeGajananTechnologies"><YouTubeIcon /></a>
+            </div>
+            <div className="col-span-3"></div>
+
+        </div>
+
+        <div className="grid  grid-flow-col grid-cols-12 bg-[#ffffff]">
+            <div className="lg:col-span-3 col-span-0 "></div>
+            {/* main logo div */}
+            <div className="lg:col-span-3 col-span-6">
+                <Link to="/">
+                <img src={logo} width={300}  className="my-auto  cursor-pointer rounded-full  " />
+                </Link>
+            </div>
+            
+            <div className="col-span-6  my-auto">
+                <VerticleNAvbar
+                />
+                <span onClick={displayVerticleNavbar} className="text-[#f35757] float-right p-5 cursor-pointer 2xl:hidden "><ArticleIcon sx={{ fontSize: 50 }} /></span>
+                <div className=" hidden 2xl:block float-left">
+                    <Link to="/" className=" px-[30px] border-r-0    py-12   border-2 border-y-0 border-gray-200 p-5   hover:bg-[#dfd7d7]">Home</Link>
+                    <Link to="" onMouseOver={serviceHoverOmuseOver} onMouseLeave={serviceHoverOmuseLeave} className=" px-[30px]  p-5  py-12 border-r-0   border-2 border-y-0 border-gray-200   hover:bg-[#dfd7d7]">Services</Link>
+
+                    <div id="servicepopup" onMouseLeave={serviceDisplayNone} className="bg-red hidden fixed ml-[75px]   mt-[45px] ">
+                        <SerrvicesPopUP />
+                    </div>
+                    <Link to="/about-us" className="p-5 px-[30px] py-12   border-2 border-y-0 border-gray-200 border-r-0 hover:bg-[#dfd7d7]">About-Us</Link>
+                    <Link to="/contact" className="p-5 px-[30px]  py-12   border-2 border-y-0 border-gray-200    hover:bg-[#dfd7d7]">Contact</Link>
+                </div>
 
             </div>
 
