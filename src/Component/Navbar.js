@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="lg:grid hidden bg-[white] lg:block  lg:grid-cols-12 py-1 border-solid border-2 ">
             <div className="col-span-3"></div>
 
-            <p className="col-span-3   p-2 pr-5  text-[#423b3b]"><span className="font-bold">Phone:</span> (+91) 7276867899  |  <span className="font-bold ">Email:</span> <a className="hover:text-[grey]" href="mailto:Contact@shreegajanan.org" >Contact@shreegajanan.org</a></p>
+            <p className="col-span-3   p-2 pr-5  text-[#423b3b]"><span className="font-bold">Phone:</span> (+91) 9890014480  |  <span className="font-bold ">Email:</span> <a className="hover:text-[grey]" href="mailto:Contact@shreegajanan.org" >Contact@shreegajanan.org</a></p>
             <div className="col-span-3 p-2 pl-5 text-right">
                 <a className="pr-2 text-[#423b3b] hover:text-[grey]" href=""><WhatsAppIcon /></a>
                 <a className="pr-2 text-[#423b3b] hover:text-[grey]" href="https://www.facebook.com/people/Shree-Gajanan-Tec"><FacebookIcon /></a>
