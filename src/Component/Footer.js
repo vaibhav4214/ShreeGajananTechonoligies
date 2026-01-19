@@ -8,12 +8,12 @@ const Footer = () => {
     return (
         <>
 
-            <div className=" mt-auto text-[grey]   bg-[#f8f6e3]    w-[100%]">
-                <div className='grid  p-5 mx-5  border-[grey]  grid-rows-1 lg:grid-cols-12'>
-                    <div className='lg:col-span-2 col-span-0 '></div>
-                    <div className='lg:col-span-2  p-5'>
-                        <img className="lg:w-[70%]" src={logo} /><br />
-                        <p className='text-[grey] mt-[-30px]'>At Shree Gajanan Technologies, we believe that imagination plus innovation equals a complete solution. We believe that there is virtually no end to the success that can be achieved with one single value- innovation</p>
+            <div className=" mt-auto text-[grey]   bg-[#f8f6e3]    ">
+                <div className='grid  p-5   border-[grey]  grid-rows-1 lg:grid-cols-12'>
+                    <div className='lg:col-span-2 '></div>
+                    <div className='lg:col-span-2  lg:p-5'>
+                        <img className="ml-[-50px]" src={logo} /><br />
+                        <p className='text-[grey] ml-[-50px]'>At Shree Gajanan Technologies, we believe that imagination plus innovation equals a complete solution. We believe that there is virtually no end to the success that can be achieved with one single value- innovation</p>
 
                     </div>
                     <div className='col-span-2   p-5 border-[grey]'>

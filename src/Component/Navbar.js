@@ -7,6 +7,10 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import HomeIcon from '@mui/icons-material/Home';
+import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+import InfoIcon from '@mui/icons-material/Info';
+import LanSharpIcon from '@mui/icons-material/LanSharp';
 
 const Navbar = () => {
 
@@ -34,11 +38,11 @@ const Navbar = () => {
 
     return (<>
         {/* nav bar */}
-        <div className="lg:grid hidden bg-[white] lg:block  lg:grid-cols-12 py-1 border-solid border-2 ">
+        <div className="lg:grid  bg-[white] lg:block  lg:grid-cols-12 py-1 border-solid border-2 ">
             <div className="col-span-3"></div>
 
-            <p className="col-span-3   p-2 pr-5  text-[#423b3b]"><span className="font-bold">Phone:</span> (+91) 9890014480  |  <span className="font-bold ">Email:</span> <a className="hover:text-[grey]" href="mailto:Contact@shreegajanan.org" >Contact@shreegajanan.org</a></p>
-            <div className="col-span-3 p-2 pl-5 text-right">
+            <p className="lg:col-span-3 col-span-12 text-[13px]   p-2 pr-5  text-[#423b3b]"><span className="font-bold">Phone:</span> (+91) 7276867899  |  <span className="font-bold ">Email:</span> <a className="hover:text-[grey]" href="mailto:Contact@shreegajanan.org" >Contact@shreegajanan.org</a></p>
+            <div className="lg:col-span-3 col-span-12 p-2 pl-5 lg:text-right">
                 <a className="pr-2 text-[#423b3b] hover:text-[grey]" href=""><WhatsAppIcon /></a>
                 <a className="pr-2 text-[#423b3b] hover:text-[grey]" href="https://www.facebook.com/people/Shree-Gajanan-Tec"><FacebookIcon /></a>
                 <a className="pr-2 text-[#423b3b] hover:text-[grey]" href="https://www.instagram.com/shreegajanantechnology/"><InstagramIcon /></a>
@@ -62,14 +66,14 @@ const Navbar = () => {
                 />
                 <span onClick={displayVerticleNavbar} className="text-[#f35757] float-right p-5 cursor-pointer 2xl:hidden "><ArticleIcon sx={{ fontSize: 50 }} /></span>
                 <div className=" hidden 2xl:block float-left">
-                    <Link to="/" className=" px-[30px] border-r-0    py-12   border-2 border-y-0 border-gray-200 p-5   hover:bg-[#dfd7d7]">Home</Link>
-                    <Link to="" onMouseOver={serviceHoverOmuseOver} onMouseLeave={serviceHoverOmuseLeave} className=" px-[30px]  p-5  py-12 border-r-0   border-2 border-y-0 border-gray-200   hover:bg-[#dfd7d7]">Services</Link>
+                    <Link to="/" className=" px-[30px] border-r-0    py-12   border-2 border-y-0 border-gray-200 p-5   hover:bg-[#dfd7d7]"><HomeIcon/>Home</Link>
+                    <Link to="" onMouseOver={serviceHoverOmuseOver} onMouseLeave={serviceHoverOmuseLeave} className=" px-[30px]  p-5  py-12 border-r-0   border-2 border-y-0 border-gray-200   hover:bg-[#dfd7d7]"><LanSharpIcon/>Services</Link>
 
-                    <div id="servicepopup" onMouseLeave={serviceDisplayNone} className="bg-red hidden fixed ml-[75px]   mt-[45px] ">
+                    <div id="servicepopup" onMouseLeave={serviceDisplayNone} className="bg-red hidden absolute ml-[75px]   mt-[45px] ">
                         <SerrvicesPopUP />
                     </div>
-                    <Link to="/about-us" className="p-5 px-[30px] py-12   border-2 border-y-0 border-gray-200 border-r-0 hover:bg-[#dfd7d7]">About-Us</Link>
-                    <Link to="/contact" className="p-5 px-[30px]  py-12   border-2 border-y-0 border-gray-200    hover:bg-[#dfd7d7]">Contact</Link>
+                    <Link to="/about-us" className="p-5 px-[30px] py-12   border-2 border-y-0 border-gray-200 border-r-0 hover:bg-[#dfd7d7]"><InfoIcon/>About-Us</Link>
+                    <Link to="/contact" className="p-5 px-[30px]  py-12   border-2 border-y-0 border-gray-200    hover:bg-[#dfd7d7]"><PermContactCalendarIcon/>Contact</Link>
                 </div>
 
             </div>
