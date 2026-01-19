@@ -5,6 +5,8 @@ import skillTrainingImg from "../assest/skilltraining.jpg"
 import careerImg1 from "../assest/careerimg1.jpg"
 import careerImg2 from "../assest/careerimg2.jpg"
 import stylecss from "./Services.module.css"
+import LanSharpIcon from '@mui/icons-material/LanSharp';
+
 
 const Services = () => {
 
@@ -36,21 +38,10 @@ const Services = () => {
     return <div className="">
 
         <Navbar />
-        <div className="p-5 border-2 mb-5 bg-white grid grid-cols-12">
-            <div className="col-span-3"></div>
-            <p className="text-[20px] float-left my-auto   col-span-1   text-[grey]  font-[600]">
+               <h1 className="text-[50px]  underline text-[#ffffff] text-center font-[900]"><LanSharpIcon/>Services</h1>
 
-                Services</p>
-            <p className="col-span-5 border-l-2 pl-10 text-[20px] text-[grey]">Delivering platforms that transform digital experience.</p>
-            <p className="col-span-3 float-left text-[grey]">
-
-               <span className="text-[red]">Home</span>  / Services
-
-            </p>
-
-        </div>
         {/* btn bar */}
-        <div className="lg:w-[50%] w-[80%]  mx-auto">
+        <div className="lg:w-[50%] w-[98%]  mx-auto">
             <button value="functionaltesting" onClick={getServiceInformation} className={`${stylecss.allbtn} bg-[red]`}>Functional Testing</button>
             <button value="nonfuctionaltesting" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Non Functional Testing</button>
             <button value="uidesign" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>UI/UX Design</button>
@@ -71,9 +62,9 @@ const Services = () => {
 
 
         </div>
-        <div className="grid grid-flow-col mb-5 text-[grey]   grid-cols-12">
-            <div className="lg:col-span-3 col-span-1"></div>
-            <div className="lg:col-span-6 col-span-10 rounded-[5px] p-5 bg-[white] ">
+        <div className="grid mx-2 mb-5 text-[grey]   grid-cols-12">
+            <div className="lg:col-span-3 col-span-0 "></div>
+            <div className="lg:col-span-6 col-span-12 rounded-[5px] p-5 bg-[white] ">
                 {/* Functional Testing */}
                 <div className=" px-10 border-2" id="functionaltesting">
                     <h5 className="text-[20px] font-[900] ">Types of Functional Testing Services We Provide</h5>

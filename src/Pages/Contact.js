@@ -1,11 +1,13 @@
 import Footer from "../Component/Footer"
 import Navbar from "../Component/Navbar"
+import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+
 
 
 const Contact = () => {
     return <>
         <Navbar />
-        <p className="text-[50px] underline text-[#ffffff] text-center font-[900]">Contact</p>
+        <p className="text-[50px] underline text-[#ffffff] text-center font-[900]"><PermContactCalendarIcon/>Contact</p>
         <div className="grid grid-cols-12 m-2 p-[15px]">
             <div className="lg:col-span-3"></div>
                         <div className="lg:col-span-3 col-span-12 shadow-2xl rounded-[1px]  bg-[white] ml-1">

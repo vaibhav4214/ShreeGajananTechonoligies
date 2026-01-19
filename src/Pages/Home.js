@@ -13,12 +13,12 @@ const Home = () => {
 
    const siderImgB = {
       backgroundImage: `url(${siderImg})`,
-      height: '50vh',
+      height: '70vh',
       backgroundSize: 'cover',
    };
    const siderImgB2 = {
       backgroundImage: `url(${siderImg2})`,
-      height: '20vh',
+      height: '25vh',
       backgroundSize: 'cover',
 
    };
@@ -44,28 +44,30 @@ const Home = () => {
 
       {/* sider */}
       <div className=" grid grid-cols-12" style={siderImgB}>
-         <div className="col-span-3"></div>
-         <div className="col-span-6 font-[900] my-auto text-white">
+         <div className="lg:col-span-3"></div>
+         <div className="lg:col-span-6 col-span-12 p-10 font-[900] my-auto text-white">
             <p className="text-[25px] animate-pulse inline" >4 Years Of Solid Technology</p>
-            <p className="text-[70px] ">SHREE GAJANAN TECHNOLOGIES</p>
+            <p className="text-[40px] lg:text-[70px] ">SHREE GAJANAN TECHNOLOGIES</p>
+            
+            
             <Link to="/services"><Button variant="contained" color="error">Our Services</Button></Link>
 
          </div>
 
 
-         <div className="col-span-3"></div>
+         <div className="lg:col-span-3"></div>
 
       </div>
 
-      <div className="bg-[#ebeee2b9] grid grid-cols-2 text-grey my-5 text-[25px] p-[20px] fond-900">
-         <div className="col-span-1 ml-[100px]">End-to-End Software Testing ensures thorough verification, enhancing quality and reliability.
+      <div className="bg-[#ebeee2b9] grid grid-cols-2 text-grey my-5 text-[25px] py-[20px] fond-900">
+         <div className=" col-span-2 lg:col-span-1 p-5 lg:ml-[100px]">End-to-End Software Testing ensures thorough verification, enhancing quality and reliability.
          </div>
-         <div className="col-span-1">
+         <div className="col-span-2 lg:col-span-1 p-5">
             <Link to="/contact">
             <Button variant="contained" color="error">Get in touch with Us</Button></Link>
          </div>
       </div>
-      <div className="grid  grid-cols-3 gap-2 mt-3 px-20">
+      <div className="grid  grid-cols-3 gap-2 mt-3 px-2 lg:px-20">
          <div className="col-span-3 lg:col-span-1  hover:bg-[grey] bg-[#ebeee2b9] rounded-[10px] shadow-2xl p-2">
             <img src="https://gloat.com/wp-content/uploads/talent-mobility-feature-img.jpg" />
             <h1 className="text-[30px] text-center">TALENT</h1>
@@ -86,19 +88,19 @@ const Home = () => {
                Technology Consulting & implementation, Web Development, Application Development,Training & Mentorship            </p>
          </div>
       </div>
-      <div className="bg-[#ebeee2b9] " style={siderImgB} >
+      <div className="bg-[#ebeee2b9] my-5"  style={siderImgB} >
          <p className="text-[35px] text-white font-[900] text-center"> Agile Software Development </p>
-         <img src={agileImg}  className="h-[80%] blur-0   z-30 m-auto my-5" />
+         <img src={agileImg}  className=" blur-0 lg:h-[80%]   m-auto my-5" />
 
       </div>
       {/* services */}
       <div className="grid grid-cols-12 bg-[#f8f6e3] p-5 ">
-         <div className="col-span-2"></div>
-         <div className="col-span-4">
-            <p className="text-[25px]  ">Latest Post</p>
+         <div className="lg:col-span-2"></div>
+         <div className="col-span-12 lg:col-span-4">
+            <p className="text-[25px] text-center ">Latest Post</p>
          </div>
         
-         <div className="col-span-4 ">
+         <div className="col-span-12 lg:col-span-4 ">
             <p className=" text-[25px]">Our Services</p><br/>
             <button value="functionaltesting" onClick={getServiceInformation} className={`${stylecss.allbtn} bg-[red]`}>Functional Testing</button>
             <button value="uidesign" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>UI/UX Design</button>

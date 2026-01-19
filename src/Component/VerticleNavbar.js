@@ -1,4 +1,10 @@
 import { Link } from "react-router-dom"
+import HomeIcon from '@mui/icons-material/Home';
+import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+import InfoIcon from '@mui/icons-material/Info';
+import LanSharpIcon from '@mui/icons-material/LanSharp';
+import ClearIcon from '@mui/icons-material/Clear';
+
 
 const VerticleNAvbar = () => {
     const hideVeticleNavbar=()=>
@@ -8,13 +14,13 @@ const VerticleNAvbar = () => {
     return (
         
         <>
-            <div id="verticleNavBar" className="fixed hidden text-[white] font-[900] bg-[#fc6262] right-0 w-[30%]   top-0 h-[100%]">
-                <span className="float-right p-5 bg-[white] rounded-md  cursor-pointer" onClick={hideVeticleNavbar}>❌</span>
-                <ul className="pl-10 pt-[100px]">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/services"> Service</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/about-us">About Us</Link></li>
+            <div id="verticleNavBar" className="fixed animate-come-in hidden text-[white] font-[900] z-10 bg-[#ffffff] right-0 w-[50%]   top-0 h-[100%]">
+                <span className="float-right  p-2 bg-[#ce5252] rounded-md  cursor-pointer" onClick={hideVeticleNavbar}><ClearIcon/></span>
+                <ul className=" pt-[50px]">
+                    <li className="bg-[#ce5252] m-1 p-1"><Link to="/"><HomeIcon/>Home</Link></li>
+                    <li className="bg-[#ce5252] m-1 p-1"><Link to="/services"><LanSharpIcon/> Service</Link></li>
+                    <li className="bg-[#ce5252] m-1 p-1"><Link to="/contact"><PermContactCalendarIcon/>Contact</Link></li>
+                    <li className="bg-[#ce5252] m-1 p-1"><Link to="/about-us"><InfoIcon/>About Us</Link></li>
 
                 </ul>
             </div>
