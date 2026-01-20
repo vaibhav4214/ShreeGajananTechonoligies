@@ -7,18 +7,25 @@ import agileImg from "../assest/agileimage.png"
 import { Link } from "react-router-dom";
 import stylecss from "../Pages/Services.module.css"
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import functionalTesting from "../assest/functionalTestingHome.png"
+import uiDesignHome from "../assest/uiDesignHome.png"
+import webDevelopHome from "../assest/webDevelopmentHome.png"
+import technologyHome from "../assest/technologyHome.jpg"
+import tranformationHome from "../assest/tranformationHome.png"
+import talentHome from "../assest/talentHome.jpg"
+
+
+
 
 
 const Home = () => {
 
    const siderImgB = {
       backgroundImage: `url(${siderImg})`,
-      height: '70vh',
       backgroundSize: 'cover',
    };
    const siderImgB2 = {
       backgroundImage: `url(${siderImg2})`,
-      height: '25vh',
       backgroundSize: 'cover',
 
    };
@@ -69,20 +76,20 @@ const Home = () => {
       </div>
       <div className="grid  grid-cols-3 gap-2 mt-3 px-2 lg:px-20">
          <div className="col-span-3 lg:col-span-1  hover:bg-[grey] bg-[#ebeee2b9] rounded-[10px] shadow-2xl p-2">
-            <img src="https://gloat.com/wp-content/uploads/talent-mobility-feature-img.jpg" />
+            <img src={talentHome} />
             <h1 className="text-[30px] text-center">TALENT</h1>
             <p>
                We provide end to end services from graceful on boarding to exit as per custom requirements
             </p>
          </div>
          <div className="col-span-3 lg:col-span-1 shadow-2xl bg-[#ebeee2b9] rounded-[10px] hover:bg-[grey] p-2">
-            <img src="https://www.logicalcube.com/wp-content/uploads/2023/09/l3-digital-transformation.png" />
+            <img src={tranformationHome} />
             <h1 className="text-[30px] text-center">Tranformation</h1>
             <p>
                Growth Consulting & Implementation, Digital Branding & Transformation, On line   Reputation Management, Analysis & Strategy  based  on  Market  Research            </p>
          </div>
          <div className="col-span-3 lg:col-span-1 bg-[#ebeee2b9] rounded-[10px] hover:bg-[grey] shadow-2xl p-2">
-            <img src="https://gloat.com/wp-content/uploads/talent-mobility-feature-img.jpg" />
+            <img src={technologyHome} />
             <h1 className="text-[30px] text-center">Technology</h1>
             <p>
                Technology Consulting & implementation, Web Development, Application Development,Training & Mentorship            </p>
@@ -102,7 +109,7 @@ const Home = () => {
         
          <div className="col-span-12 lg:col-span-4 ">
             <p className=" text-[25px]">Our Services</p><br/>
-            <button value="functionaltesting" onClick={getServiceInformation} className={`${stylecss.allbtn} bg-[red]`}>Functional Testing</button>
+            <button value="functionaltesting" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Functional Testing</button>
             <button value="uidesign" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>UI/UX Design</button>
             <button value="webdevelopment" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Web Development</button>
             <button  className={`${stylecss.allbtn}`}> <Link to="/services">More</Link></button>
@@ -114,13 +121,13 @@ const Home = () => {
                   As the leading functional testing company in India, we provide a wide range of functional testing services to cater to our clients' diverse needs.
                   Our experts excel in validating user interactions and ensuring seamless end-to-end system integration, delivering comprehensive solutions for all your testing requirements.
                </p>
-               <img src="https://www.prognosticsoft.com/images/pic-small-11.png" className="col-span-4"/>
+               <img src={functionalTesting} className="col-span-4"/>
             </div>
             {/* UX/UI Design */}
             <div className="hidden border-2
                 " id="uidesign">
                <div className="grid grid-flow-col grid-cols-12">
-                  <img src="https://www.prognosticsoft.com/images/pic-small-3.png" className="col-span-4 h-[200px] " />
+                  <img src={uiDesignHome} className="col-span-4 h-[200px] " />
                   <div className="col-span-8">
                      The first impression may the last impression, but the first Experience is what truly matters.
 
@@ -139,7 +146,7 @@ const Home = () => {
                       A fully-functional website is the face of any business in the digital world and at Sunday Tech we understand this. That’s why we present to you the most innovative web development services, thanks to our expert web developers leveraging the latest web development strategies, dynamic front-end, back-end, web applications, and design capacity. 
 
                   </div>
-                                    <img src="https://www.prognosticsoft.com/images/pic-small-5.png" className="col-span-4 h-[200px] " />
+                 <img src={webDevelopHome} className="col-span-4 h-[200px] " />
 
                </div>
                      <p className="col-span-12">With mobile being the first device of choice we follow a mobile-first approach enabling the websites to leverage the complete range of constantly evolving mobility features</p>

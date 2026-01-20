@@ -6,6 +6,9 @@ import careerImg1 from "../assest/careerimg1.jpg"
 import careerImg2 from "../assest/careerimg2.jpg"
 import stylecss from "./Services.module.css"
 import LanSharpIcon from '@mui/icons-material/LanSharp';
+import uiDesign from "../assest/uiDesignHome.png"
+import mobileAppDevelopment from "../assest/mobileAppDevelopment.png"
+import webDevelopment from "../assest/webDevelopmentHome.png"
 
 
 const Services = () => {
@@ -46,10 +49,10 @@ const Services = () => {
             <button value="nonfuctionaltesting" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Non Functional Testing</button>
             <button value="uidesign" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>UI/UX Design</button>
             <button value="softwareService" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Software Service</button>
-            <button value="skilltraining" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>3.Skill Training</button>
-            <button value="product" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>2.Product</button>
+            <button value="skilltraining" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Skill Training</button>
+            <button value="product" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Product</button>
             {/* <button value="talentservice" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>4.Talent Service</button> */}
-            <button value="careerservice" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>5.Career Service</button>
+            <button value="careerservice" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Career Service</button>
 
             <button value="movileappdevelopment" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Mobile App Development</button>
             <button value="webdevelopment" onClick={getServiceInformation} className={`${stylecss.allbtn}`}>Web Development</button>
@@ -210,7 +213,7 @@ const Services = () => {
                 <div className="hidden border-2
                 " id="uidesign">
                     <div className="grid grid-flow-col grid-cols-12">
-                        <img src="https://www.prognosticsoft.com/images/pic-small-3.png" className="col-span-4 h-[200px] " />
+                        <img src={uiDesign} className="col-span-4 h-[200px] " />
                         <div className="col-span-8">
                             The first impression may the last impression, but the first Experience is what truly matters.
 
@@ -262,7 +265,7 @@ const Services = () => {
                 <div className="hidden border-2
                 " id="movileappdevelopment">
                     <div className="grid grid-flow-col grid-cols-12">
-                        <img src="https://www.prognosticsoft.com/images/pic-small-4.png" className="col-span-4 h-[200px] " />
+                        <img src={mobileAppDevelopment} className="col-span-4 h-[200px] " />
                         <div className="col-span-8">
                             There is only one device that truly matters – the Mobile. And it getting more powerful and all-encompassing by the day.
 
@@ -281,7 +284,7 @@ const Services = () => {
                 <div className="hidden border-2
                 " id="webdevelopment">
                     <div className="grid grid-flow-col grid-cols-12">
-                        <img src="https://www.prognosticsoft.com/images/pic-small-5.png" className="col-span-4 h-[200px] " />
+                        <img src={webDevelopment} className="col-span-4 h-[200px] " />
                         <div className="col-span-8">
                             A fully-functional website is the face of any business in the digital world and at Prognosticsoft we understand this. That’s why we present to you the most innovative web development services, thanks to our expert web developers leveraging the latest web development strategies, dynamic front-end, back-end, web applications, and design capacity.
 

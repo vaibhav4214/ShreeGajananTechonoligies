@@ -4,6 +4,8 @@ import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import InfoIcon from '@mui/icons-material/Info';
 import LanSharpIcon from '@mui/icons-material/LanSharp';
 import ClearIcon from '@mui/icons-material/Clear';
+import ChildCareIcon from '@mui/icons-material/ChildCare';
+
 
 
 const VerticleNAvbar = () => {
@@ -19,6 +21,7 @@ const VerticleNAvbar = () => {
                 <ul className=" pt-[50px]">
                     <li className="bg-[#ce5252] m-1 p-1"><Link to="/"><HomeIcon/>Home</Link></li>
                     <li className="bg-[#ce5252] m-1 p-1"><Link to="/services"><LanSharpIcon/> Service</Link></li>
+                    <li className="bg-[#ce5252] m-1 p-1"><Link to="/careers"><ChildCareIcon/>Careers</Link></li>
                     <li className="bg-[#ce5252] m-1 p-1"><Link to="/contact"><PermContactCalendarIcon/>Contact</Link></li>
                     <li className="bg-[#ce5252] m-1 p-1"><Link to="/about-us"><InfoIcon/>About Us</Link></li>
 

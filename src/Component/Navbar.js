@@ -11,6 +11,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import InfoIcon from '@mui/icons-material/Info';
 import LanSharpIcon from '@mui/icons-material/LanSharp';
+import ChildCareIcon from '@mui/icons-material/ChildCare';
 
 const Navbar = () => {
 
@@ -72,6 +73,8 @@ const Navbar = () => {
                     <div id="servicepopup" onMouseLeave={serviceDisplayNone} className="bg-red hidden absolute ml-[75px]   mt-[45px] ">
                         <SerrvicesPopUP />
                     </div>
+                    <Link to="/careers" className="p-5 px-[30px] py-12   border-2 border-y-0 border-gray-200 border-r-0 hover:bg-[#dfd7d7]"><ChildCareIcon/>Careers</Link>
+
                     <Link to="/about-us" className="p-5 px-[30px] py-12   border-2 border-y-0 border-gray-200 border-r-0 hover:bg-[#dfd7d7]"><InfoIcon/>About-Us</Link>
                     <Link to="/contact" className="p-5 px-[30px]  py-12   border-2 border-y-0 border-gray-200    hover:bg-[#dfd7d7]"><PermContactCalendarIcon/>Contact</Link>
                 </div>
