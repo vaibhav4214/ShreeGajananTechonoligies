@@ -5,6 +5,7 @@ import Services from './Pages/Services';
 import AboutUS from './Pages/AboutUs';
 import Contact from './Pages/Contact';
 import PageNotFOund from './Pages/PageNotFOund';
+import Careers from './Pages/Careers';
 
 
 
@@ -18,6 +19,7 @@ function App() {
             </Route>
             <Route path='/about-us' element={<AboutUS/>}/>
             <Route path='/contact' element={<Contact/>}/>
+            <Route path="/careers" element={<Careers/>}/>
             <Route path="*" element={<PageNotFOund/>} />
           </Routes>
   </BrowserRouter>

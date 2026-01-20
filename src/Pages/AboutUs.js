@@ -1,6 +1,8 @@
 import Footer from "../Component/Footer"
 import Navbar from "../Component/Navbar"
 import InfoIcon from '@mui/icons-material/Info';
+import VissionMissionQuality from "../Component/VissionMissionQuality";
+
 
 
 
@@ -17,7 +19,9 @@ const AboutUS = () => {
 
                 We strongly believe in providing effective client service, taking care of the employees’ needs, and creating a success story to remember through our innovation.
             </div>
-            <div className="col-span-3"></div>
+            <div className="lg:col-span-3 col-span-12">
+                <VissionMissionQuality/>
+            </div>
             <div className="col-span-2"></div>
 
 
